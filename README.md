@@ -14,7 +14,7 @@ and write in it your logiun info
 username = 'your login info'   
 password = 'your password'
 target = 'your target'
-message
+message = 'your message'
 ```
 
 ## Usage
@@ -23,3 +23,11 @@ message
   2.  insert your facebook target by writing his name in ` target = 'your target' `
   3.  insert the message in ` message = ' your message ' `
   4.  run your code
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
