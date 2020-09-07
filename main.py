@@ -1,7 +1,7 @@
 import time
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-from LoginInfo import username, password
+from LoginInfo import username, password, target, message
 
 
 class MyBot():
@@ -22,7 +22,7 @@ class MyBot():
         fb_login_click.click()
 
         fb_search = self.driver.find_element_by_xpath('//*[@id="js_u"]/div/div/div[1]/span[1]/label/input')
-        fb_search.send_keys('Yah Bouss')
+        fb_search.send_keys(target)
 
         time.sleep(1)
 
@@ -31,14 +31,11 @@ class MyBot():
 
         time.sleep(1)
 
-        fb_target_msgbox = self.driver.find_element_by_class_name('_5rpb')
-        #fb_target_msgbox.click()
-        time.sleep(1)
         fb_target_msgbox_in = self.driver.find_element_by_class_name('notranslate')
         fb_target_msgbox_in.send_keys('This is an automated messenger' + Keys.RETURN)
         while True:
-            fb_target_msgbox_in.send_keys('How you doin' + Keys.RETURN)
-            print('message (sent)')
+            fb_target_msgbox_in.send_keys(message + Keys.RETURN)
+            print(f'{message} (sent)')
             time.sleep(0.25)
 
 
