@@ -41,5 +41,4 @@ class MyBot():
 
 
 bot = MyBot()
-
 bot.WebIn()
