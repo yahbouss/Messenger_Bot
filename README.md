@@ -2,14 +2,17 @@
 
 ### This Bot was made by Yah Bouss
 
+## Description
+
+This Messanger bot is made to spam one of your friends (as a joke, don't abuse it) you enter the targets messenger name and it should spam him with the message you indicate
 
 ## Setup
 to setup, you need to install selenium using `pip`
 
 `pip install selenium`
 
-and make a file in the same folder with the name `LoginInfo.py`
-and write in it your logiun info
+Make a file in the same folder with the name `LoginInfo.py`
+Write in it your login info
 ```
 username = 'your login info'   
 password = 'your password'
@@ -26,9 +29,9 @@ message = 'your message'
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Contributions should be under the terms of the MIT license [MIT](https://choosealicense.com/licenses/mit/).
 
-Please make sure to update tests as appropriate.
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+This project is licensed under the [MIT](https://choosealicense.com/licenses/mit/) License
 
